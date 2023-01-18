@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+BankProgram --> BankClient
+BankClient --> Bank
+Bank --> BankAccount
+class BankProgram {
+  main)String[] args): void
+}
+
+
+class BankClient{
+  run():void
+}
+
+class Bank{
+new Account (boolean b): int
+getBalance(int a): int
+deposit (int a, int n): void
+authorizeLoan(int a, int n): boolean
+toString() : String
+addInterest(): void
+setForeign(int a, boolean b): void
+}
+
+class BankAccount{
+getAcctNum():int
+getBalance(int n):void
+isForeign():boolean
+setForeign((boolean b):void
+
+
+
+}
+
+
+
+
+
+
+@enduml
